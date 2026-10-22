@@ -13,6 +13,8 @@ use App\Shared\Http\Response;
 use App\Shared\Support\ApiException;
 use App\Shared\Support\Helpers;
 
+require_once __DIR__ . '/../backend/src/Shared/Runtime/RuntimePolicy.php';
+\App\Shared\Runtime\RuntimePolicy::assertSupported(PHP_VERSION);
 require_once __DIR__ . '/../backend/bootstrap/autoload.php';
 
 $env = new Env(__DIR__ . '/../backend/.env');
