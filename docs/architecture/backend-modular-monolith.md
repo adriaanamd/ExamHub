@@ -23,7 +23,7 @@ Module internals communicate through application/domain contracts. Stored proced
 
 ## Runtime and verification
 
-The supported runtime is PHP 8.5.x. Composer requires ^8.5, and Docker uses php:8.5-apache.
+The supported runtime is PHP 8.5.12 or newer. Composer requires ^8.5.12, and Docker uses the pinned php:8.5.12-apache image to prevent deployment on a PHP2Shell-vulnerable runtime.
 
 Useful checks from backend/:
 
